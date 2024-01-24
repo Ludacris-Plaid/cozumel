@@ -11,3 +11,10 @@ function validateLogin() {
         alert('Invalid username or password. Please try again.');
     }
 }
+
+// Add event listener for Enter key
+document.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        validateLogin();
+    }
+});
